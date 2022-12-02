@@ -1,0 +1,52 @@
+imageType:
+  Original: {}
+  Wavelet: {}
+  LBP3D:
+    binWidth: 1.0
+  LoG:
+    sigma: [1.0, 3.0, 5.0 ]
+
+featureClass:
+  firstorder:
+  glcm: # Disable SumAverage by specifying all other GLCM features available
+    - 'Autocorrelation'
+    - 'JointAverage'
+    - 'ClusterProminence'
+    - 'ClusterShade'
+    - 'ClusterTendency'
+    - 'Contrast'
+    - 'Correlation'
+    - 'DifferenceAverage'
+    - 'DifferenceEntropy'
+    - 'DifferenceVariance'
+    - 'JointEnergy'
+    - 'JointEntropy'
+    - 'Imc1'
+    - 'Imc2'
+    - 'Idm'
+    - 'Idmn'
+    - 'Id'
+    - 'Idn'
+    - 'InverseVariance'
+    - 'MaximumProbability'
+    - 'SumEntropy'
+    - 'SumSquares'
+  glrlm:
+  glszm:
+  gldm:
+
+setting:
+  normalize: true
+  normalizeScale: 100
+  binWidth: 25
+  interpolator: 'sitkBSpline'
+  resampledPixelSpacing: [1, 1, 1]
+  correctMask: true
+  voxelArrayShift: 300
+  force2D: true
+  force2Ddimension: 0
+
+voxelSetting:
+  kernelRadius: 1
+  maskedKernel: true
+  voxelBatch: 10000
