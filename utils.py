@@ -6,8 +6,6 @@ import traceback
 import SimpleITK as sitk
 import matplotlib.pyplot as plt
 import time
-from scipy.ndimage import sobel, generic_gradient_magnitude
-from skimage.filters import threshold_otsu
 
 
 def correct_proba(patient, probabilities, maximum_distance=20):
