@@ -16,7 +16,7 @@ Here Santiago explains what the prerequisites are: preprocessing, registration, 
 
 ##### Requirements
 
-In order to run this code, Python 3.9.15 or above is required. The Python packages listed in `requirements.txt` are also necessary. One can istall them by running
+In order to run this code, Python 3.9.15 or above is required. The Python packages listed in `requirements.txt` are also necessary. One can install them by running
 ```
 pip install -r requirements.txt
 ```
