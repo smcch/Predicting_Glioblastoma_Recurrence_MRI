@@ -20,6 +20,7 @@ After preprocessing, segmentation of the following structures is mandatory: a) p
 
 We strongly recommend carrying out the preprocessing using CaPTk, which has tools for conversion to NifTI files and the BraTS pipeline, which includes the aforementioned steps.
 
+![imagen](https://user-images.githubusercontent.com/87584415/206718166-5993cd76-bb90-4425-ba8a-84ba6358aa1b.png)
  
 
 The normalized volumes in the output directory should be renamed as follows: t1.nii.gz, t1ce.nii.gz, t2.nii.gz, flair.nii.gz. In addition, the automatic segmentation performed by the software must be corrected manually if necessary. It is essential to separate the labels to create previously mentioned structures (peritumor.nii.gz, tumor or cavity.nii.gz).
@@ -29,6 +30,7 @@ The ADC map sequence is not supported in the BraTS pipeline offered by CapTK. Pl
 
 Below is an example of the volumes and segmentation that will be used as input.
  
+![imagen](https://user-images.githubusercontent.com/87584415/206718200-76151ded-36a5-4689-9724-f2dc7db9d781.png)
 
 
 ## How to use
