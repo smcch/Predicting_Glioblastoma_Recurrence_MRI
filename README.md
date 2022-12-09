@@ -4,11 +4,32 @@ This repository contains the Python implementation of the paper [Predicting regi
 
 ## Overall idea
 
-Here we explain what the model does, expects in input, spits in output, etc.
+This model uses as input the voxelwise radiomic features of the non-enhancing peritumoral region of glioblastomas extracted from multiparametric structural MRI. As output, the probability for each voxel of becoming a site of future tumor recurrence is obtained. The probabilities are represented through color-coded maps. In addition, a segmentation of the regions identified as high-risk by the model is generated.
 
 ## Prerequisites
 
-Here Santiago explains what the prerequisites are: preprocessing, registration, segmentation, etc.
+Raw MRI sequences need to be pre-processed according to the following pipeline:
+
+1. DICOM to NifTI conversion
+2. LPS-RAI reorientation
+3. Coregistration
+4. Skull stripping
+5. Intensity normalization (z-score)
+
+After preprocessing, segmentation of the following structures is mandatory: a) peritumoral region, b) tumor core (enhancing volume + necrosis) or surgical cavity depending on whether it is a preoperative or postoperative study.
+
+We strongly recommend carrying out the preprocessing using CaPTk, which has tools for conversion to NifTI files and the BraTS pipeline, which includes the aforementioned steps.
+
+ 
+
+The normalized volumes in the output directory should be renamed as follows: t1.nii.gz, t1ce.nii.gz, t2.nii.gz, flair.nii.gz. In addition, the automatic segmentation performed by the software must be corrected manually if necessary. It is essential to separate the labels to create previously mentioned structures (peritumor.nii.gz, tumor or cavity.nii.gz).
+The ADC map sequence is not supported in the BraTS pipeline offered by CapTK. Please follow these pre-processing steps after DICOM to NifTI conversion:
+- Skull stripping: can be done using the BET function of FSL. Or through the 3D Slicer - Swiss skull strip plugin.
+- Co-registration to the t1ce.nii.gz. This function can be executed through CapTK or FSL.
+
+Below is an example of the volumes and segmentation that will be used as input.
+ 
+
 
 ## How to use
 
