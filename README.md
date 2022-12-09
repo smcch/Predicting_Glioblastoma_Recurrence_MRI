@@ -18,14 +18,14 @@ Raw MRI sequences need to be pre-processed according to the following pipeline:
 
 After preprocessing, segmentation of the following structures is mandatory: a) peritumoral region, b) tumor core (enhancing volume + necrosis) or surgical cavity depending on whether it is a preoperative or postoperative study.
 
-We strongly recommend carrying out the preprocessing using CaPTk, which has tools for conversion to NifTI files and the BraTS pipeline, which includes the aforementioned steps.
+We strongly recommend carrying out the preprocessing using CaPTk https://cbica.github.io/CaPTk/, which has tools for conversion to NifTI files and the BraTS pipeline, which includes the aforementioned steps.
 
 ![imagen](https://user-images.githubusercontent.com/87584415/206718950-1141f2c9-3501-40c8-a91e-10881642a008.png)
  
 
 The normalized volumes in the output directory should be renamed as follows: t1.nii.gz, t1ce.nii.gz, t2.nii.gz, flair.nii.gz. In addition, the automatic segmentation performed by the software must be corrected manually if necessary. It is essential to separate the labels to create previously mentioned structures (peritumor.nii.gz, tumor or cavity.nii.gz).
 The ADC map sequence is not supported in the BraTS pipeline offered by CapTK. Please follow these pre-processing steps after DICOM to NifTI conversion:
-- Skull stripping: can be done using the BET function of FSL. Or through the 3D Slicer - Swiss skull strip plugin.
+- Skull stripping: can be done using the BET function of FSL https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL. Or through the 3D Slicer - Swiss skull strip plugin https://github.com/lassoan/SlicerSwissSkullStripper.
 - Co-registration to the t1ce.nii.gz. This function can be executed through CapTK or FSL.
 
 Below is an example of the volumes and segmentation that will be used as input.
