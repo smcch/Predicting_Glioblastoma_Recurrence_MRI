@@ -1,6 +1,6 @@
 # Predicting regions of local recurrence in glioblastomas using voxel-based radiomic features of multiparametric postoperative MRI
 
-This repository contains the Python implementation of the paper [Predicting regions of local recurrence in glioblastomas using voxel-based radiomic features of multiparametric postoperative MRI](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
+This repository contains the Python implementation of the paper: Cepeda S, Luppino LT, Pérez-Núñez A, Solheim O, García-García S, Velasco-Casares M, Karlberg A, Eikenes L, Sarabia R, Arrese I, Zamora T, Gonzalez P, Jiménez-Roldán L, Kuttner S. Predicting Regions of Local Recurrence in Glioblastomas Using Voxel-Based Radiomic Features of Multiparametric Postoperative MRI. Cancers. 2023; 15(6):1894. https://doi.org/10.3390/cancers15061894 (https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#links)
 
 ## Overall idea
 
