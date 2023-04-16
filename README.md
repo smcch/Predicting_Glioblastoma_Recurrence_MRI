@@ -28,10 +28,11 @@ The ADC map sequence is not supported in the BraTS pipeline offered by CapTK. Pl
 - Skull stripping: can be done using the BET function of FSL https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL. Or through the 3D Slicer - Swiss skull strip plugin https://github.com/lassoan/SlicerSwissSkullStripper.
 - Co-registration to the t1ce.nii.gz. This function can be executed through CapTK or FSL.
 
-Below is an example of the volumes and segmentation that will be used as input.
+Below is an example of the volumes and segmentation that will be used as input, and the model's output (recurrence probability map).
  
-![imagen](https://user-images.githubusercontent.com/87584415/206718200-76151ded-36a5-4689-9724-f2dc7db9d781.png)
+![mri_seq](https://user-images.githubusercontent.com/87584415/232340667-c31257a7-b5dc-4e88-8808-c87eae353812.jpg)
 
+![probs](https://user-images.githubusercontent.com/87584415/232340674-2867bfeb-de14-4b11-b0a3-3406db851b65.jpg)
 
 ## How to use
 
