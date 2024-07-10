@@ -8,7 +8,6 @@ from skimage.filters import threshold_otsu
 from utils import correct_proba, fuse_t1ce_and_proba
 import traceback
 
-
 def main(path, maximum_distance=20):
     """
     Main function of the repository that generates the results for each patient,
@@ -38,7 +37,10 @@ def main(path, maximum_distance=20):
     dataset = create_dataset(path)
 
     with open("model.pkl", "rb") as f:
-        model, scaler = pickle.load(f)
+        models_dict, scaler, metrics_dict, _ = pickle.load(f)
+
+    # Select the CatBoost model from the dictionary
+    model = models_dict['CAT']
 
     for patient in (pbar := tqdm(dataset, leave=False)):
         pbar.set_description(f"Applying to {os.path.basename(patient)}")
@@ -63,7 +65,6 @@ def main(path, maximum_distance=20):
 
     return None
 
-
 if __name__ == "__main__":
     try:
         data_path = "Patients"
@@ -73,3 +74,4 @@ if __name__ == "__main__":
         print("\a")
 
     print("\a")
+
