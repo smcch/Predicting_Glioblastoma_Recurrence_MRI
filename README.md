@@ -15,9 +15,6 @@ Raw MRI sequences need to be pre-processed according to the following pipeline: 
 
 After preprocessing, segmentation of the following structures is mandatory: a) peritumoral region, b) tumor core (enhancing volume + necrosis) or surgical cavity depending on whether it is a preoperative or postoperative study.
 
-
-![imagen](https://user-images.githubusercontent.com/87584415/206718950-1141f2c9-3501-40c8-a91e-10881642a008.png)
-
 Below is an example of the volumes and segmentation that will be used as input, and the model's output (recurrence probability map).
  
 ![mri_seq](https://user-images.githubusercontent.com/87584415/232340667-c31257a7-b5dc-4e88-8808-c87eae353812.jpg)
