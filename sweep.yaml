@@ -1,0 +1,25 @@
+program: utils.py
+project: GBM_pydensecrf
+method: bayes
+metric:
+  goal: maximize
+  name: gain
+
+parameters:
+  scaling_dim:
+    distribution: categorical
+    values:
+      - 10
+      - 100
+      - 1000
+      - 10000
+  scaling_p:
+    distribution: categorical
+    values:
+      - 0.001
+      - 0.01
+  compat:
+    distribution: categorical
+    values:
+      - 2
+      - 3
