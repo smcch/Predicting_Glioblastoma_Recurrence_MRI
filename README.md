@@ -19,7 +19,7 @@ This software is intended exclusively for **research purposes** and **not for cl
 
 ---
 
-🧠 Developed by the [GEIBAC Research Group](https://geibac.uva.es/about) – Biomedical Imaging and Computational Analysis  
+🧠 Developed by the [GEIBAC Research Group] – Biomedical Imaging and Computational Analysis  
 🏥 In collaboration with the Neurosurgery Department of **Río Hortega University Hospital** and **UiT – The Arctic University of Norway**
 
 ---
