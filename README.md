@@ -1,6 +1,6 @@
 # 🧠📊 **GlioMap – Radiomics-Based Recurrence Prediction for Glioblastoma** 🔍🧬
 
-### 🚀 **GlioMap v2.0** is now available for academic research use!
+### 🚀 **GlioMap v2.0** is now publicly available and free to use via the web! 🌐💻
 
 An innovative AI-powered tool designed to **predict regions of tumor infiltration and recurrence** in glioblastoma using **radiomic features** extracted from **multiparametric MRI**.
 
